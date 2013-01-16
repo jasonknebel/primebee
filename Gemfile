@@ -6,6 +6,8 @@ gem 'rails', '3.2.10'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'roots-rails'
+gem 'slim'
 
 
 # Gems used only for assets and not required
@@ -18,6 +20,8 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'stylus'
 end
 
 gem 'jquery-rails'
