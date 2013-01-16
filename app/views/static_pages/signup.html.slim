@@ -1,1 +1,25 @@
-p hello
+form method='POST'
+  input type="hidden" name="_method" value="PUT"
+
+  label Name
+  input type='text' name='name' placeholder='John Smith'
+
+  label Email
+  input type='text' name='email' placeholder='john.smith@example.com'
+  
+  input.button type='submit' value='Submit'
+
+table
+  th Name
+  th Email
+  th Delete
+  -for user in @users
+    tr
+      td
+        p= user.name
+      td
+        p= user.email
+      td
+        form action='/#{user.id}' method='POST'
+          input type="hidden" name="_method" value="DELETE"
+          input.button type='submit' value='Delete User'
