@@ -4,8 +4,8 @@ Primebee::Application.routes.draw do
 
   # match '/:id' => proc { |env| [200, {}, ["Hello"]] }, :via => :delete
 
-  match '/new' => 'users#new', via: :put
+  put '/new' => 'users#new'
 
-  match '/:id' => 'users#delete', via: :delete
+  delete '/:id' => 'users#delete'
 
 end
