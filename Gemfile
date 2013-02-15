@@ -11,6 +11,8 @@ gem 'slim'
 
 group :development do
   gem 'annotate'
+  gem 'guard'
+  gem 'guard-livereload'
 end
 
 # Gems used only for assets and not required
