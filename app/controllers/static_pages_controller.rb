@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def signup
+  def admin
     @users = User.all
   end
 end

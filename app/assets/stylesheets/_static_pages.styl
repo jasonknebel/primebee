@@ -89,15 +89,17 @@ body
 
 
 header
-  .container
-    background gray
-    padding 0px 20px 0px 20px
-  p 
-    margin 0
+  nav
+    nav(1, blue, white, false)
+    a 
+      text-decoration none
+      &:hover
+        transition()
+        text-decoration underline
 
 footer
+  height 150px
   .container
-    background gray
-    padding 0px 20px 0px 20px
-  p 
-    margin 0
+    background black
+    color gray
+    padding 50px 20px 0px 20px

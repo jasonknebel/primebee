@@ -1,0 +1,16 @@
+table
+  th Email
+  th Delete
+  -for user in @users
+    tr
+      td
+        p= user.email
+      td
+        form action='/#{user.id}' method='POST'
+          input type="hidden" name="_method" value="DELETE"
+          input.button type='submit' value='Delete User'
+
+/ -for i in 1..10
+/   -i = Random.rand(40...80) * 10
+/   -j = Random.rand(40...80) * 10
+/   img src="http://lorempixel.com/#{i}/#{j}"

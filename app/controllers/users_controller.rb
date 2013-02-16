@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   def delete
     User.find(params[:id]).destroy
     
-    redirect_to root_path
+    redirect_to admin_path
   end
 
 end
