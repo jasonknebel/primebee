@@ -19,14 +19,15 @@ html
 
   header
     .container
-      p header
+      =render 'layouts/header'
 
   body
     .container
       = yield
+
   footer
     .container
-      p footer
+      =render 'layouts/footer'
 
   /[if (gte IE6)&(lte IE8)]
     = javascript_include_tag 'selectivizr.js'
