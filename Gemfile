@@ -5,7 +5,7 @@ gem 'rails', '3.2.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem 'roots-rails'
 gem 'slim'
 
@@ -13,6 +13,7 @@ group :development do
   gem 'annotate'
   gem 'guard'
   gem 'guard-livereload'
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
@@ -28,6 +29,11 @@ group :assets do
 
   gem 'stylus'
 end
+
+group :production do
+  gem 'pg'
+end
+
 
 gem 'jquery-rails'
 
