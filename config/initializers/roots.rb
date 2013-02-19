@@ -1,1 +1,1 @@
-Stylus.use 'roots-css'
+Stylus.use('roots-css') if defined?(Stylus)
